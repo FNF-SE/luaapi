@@ -2,7 +2,7 @@
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Psych Engine - Camera Functions</title>
+		<title>Shadow Engine - Camera Functions</title>
 		<link rel="stylesheet" href="../css/main.css">
 		<link rel="stylesheet" href="../css/header.css">
 		<link rel="stylesheet" href="../css/search.css">
@@ -29,8 +29,8 @@
 		<div class="headerbox">
 			<div class="header">
 				<a href="../index.html">
-					<img width="64" src="../assets/icon.ico" alt="Psych Engine Logo" draggable="false">
-					<div class="headertext">Psych Engine - Lua Script API</div>
+					<img width="64" src="../assets/icon.ico" alt="Shadow Engine Logo" draggable="false">
+					<div class="headertext">Shadow Engine - Lua Script API</div>
 				</a>
 			</div>
 		</div>
@@ -39,75 +39,6 @@
 		<div class="infobox">
 			<h1>Camera Functions</h1>
 			<p><b>Functions to change camera points and apply effects.</b></p>
-			<hr>
-			<h2 id="setCameraScroll">setCameraScroll</h2>
-			<p class="methodbox">setCameraScroll(<span class="variablemarkup">x</span>:Float, <span class="variablemarkup">y</span>:Float):Void</p>
-			<p>Set the Game Camera's current scroll position.</p>
-			<h4>Examples:</h4>
-			<ul class="methoddiv">
-				<li class="exampleitem"><span class="methodexample">setCameraScroll(0.0, 0.0)</span> - Camera Scroll position is set to X: 0 and Y: 0.</li>
-			</ul>
-			<hr>
-
-			<h2 id="setCameraFollowPoint">setCameraFollowPoint</h2>
-			<p class="methodbox">setCameraFollowPoint(<span class="variablemarkup">x</span>:Float, <span class="variablemarkup">y</span>:Float):Void</p>
-			<p>Set the Game Camera's follow point position.</p>
-			<h4>Examples:</h4>
-			<ul class="methoddiv">
-				<li class="exampleitem"><span class="methodexample">setCameraFollowPoint(-150.0, 150.0)</span> - Camera Follow point is set to 150 units to the left and 150 units down.</li>
-			</ul>
-			<hr>
-			
-			<h2 id="addCameraScroll">addCameraScroll</h2>
-			<p class="methodbox">addCameraScroll(<span class="isoptional">?</span><span class="variablemarkup">x</span>:Float = 0, <span class="isoptional">?</span><span class="variablemarkup">y</span>:Float = 0):Void</p>
-			<p>Adds X/Y to the Game Camera's current scroll position.
-			<br>All values are optional and defaults to zero.</p>
-			<h4>Examples:</h4>
-			<ul class="methoddiv">
-				<li class="exampleitem"><span class="methodexample">addCameraScroll(200.0, -100.0)</span> - Camera Scroll moves 200 units to the right and 100 units up.</li>
-			</ul>
-			<hr>
-
-			<h2 id="addCameraFollowPoint">addCameraFollowPoint</h2>
-			<p class="methodbox">addCameraFollowPoint(<span class="isoptional">?</span><span class="variablemarkup">x</span>:Float = 0, <span class="isoptional">?</span><span class="variablemarkup">y</span>:Float = 0):Void</p>
-			<p>Adds X/Y to the Game Camera's follow point position.
-			<br>All values are optional and defaults to zero.</p>
-			<h4>Examples:</h4>
-			<ul class="methoddiv">
-				<li class="exampleitem"><span class="methodexample">addCameraFollowPoint(-600.0, -200.0)</span> - Camera Follow point moves 600 units to the left and 200 units up.</li>
-			</ul>
-			<hr>
-			
-			<h2 id="getCameraScrollX">getCameraScrollX</h2>
-			<p class="methodbox">Usage: <b>getCameraScrollX()</b></p>
-			<p>Returns Game Camera's current scroll X, float value.</p>
-			<hr>
-			
-			<h2 id="getCameraScrollY">getCameraScrollY</h2>
-			<p class="methodbox">Usage: <b>getCameraScrollY()</b></p>
-			<p>Returns Game Camera's current scroll Y, float value.</p>
-			<hr>
-			
-			<h2 id="getCameraFollowX">getCameraFollowX</h2>
-			<p class="methodbox">Usage: <b>getCameraFollowX()</b></p>
-			<p>Returns Game Camera's follow point X, float value.</p>
-			<hr>
-			
-			<h2 id="getCameraFollowY">getCameraFollowY</h2>
-			<p class="methodbox">Usage: <b>getCameraFollowY()</b></p>
-			<p>Returns Game Camera's follow point Y, float value.</p>
-			<hr>
-			
-			<h2 id="cameraSetTarget">cameraSetTarget</h2>
-			<p class="methodbox">cameraSetTarget(<span class="variablemarkup">character</span>:String):Void</p>
-			<p>Changes the Follow Point to target a character.</p>
-			<ul>
-				<li><b><span class="variablemarkup">character</span></b> - Can be "bf", "gf", or "dad" ("opponent" alternatively).</li>
-			</ul>
-			<h4>Examples:</h4>
-			<ul class="methoddiv">
-				<li class="exampleitem"><span class="methodexample">cameraSetTarget('opponent')</span> - Sets camera follow point to Opponent.</li>
-			</ul>
 			<hr>
 
 			<h2 id="cameraShake">cameraShake</h2>

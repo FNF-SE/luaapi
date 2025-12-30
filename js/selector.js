@@ -79,11 +79,12 @@ function createSidebarContent(prefix) {
 		'removeLuaSprite': 'spritesheet.html',
 		'luaSpriteExists': 'spritesheet.html',
 
-		// FlxAnimate
-		'makeFlxAnimateSprite': 'flxanimate.html',
-		'loadAnimateAtlas': 'flxanimate.html',
-		'addAnimationBySymbol': 'flxanimate.html',
-		'addAnimationBySymbolIndices': 'flxanimate.html',
+		// Flixel Animate
+		'loadAnimateAtlas': 'flixel-animate.html',
+		'addAnimationBySymbol': 'flixel-animate.html',
+		'addAnimationBySymbolIndices': 'flixel-animate.html',
+		'addAnimationByFrameLabel': 'flixel-animate.html',
+		'addAnimationByFrameLabelIndices': 'flixel-animate.html',
 
 		// Text
 		'makeLuaText': 'text.html',
@@ -191,18 +192,6 @@ function createSidebarContent(prefix) {
 		// Discord
 		'changeDiscordPresence': 'discord.html',
 		'changeDiscordClientID': 'discord.html',
-
-		// Achievements
-		'getAchievementScore': 'achievements.html',
-		'setAchievementScore': 'achievements.html',
-		'addAchievementScore': 'achievements.html',
-		'unlockAchievement': 'achievements.html',
-		'isAchievementUnlocked': 'achievements.html',
-		'achievementExists': 'achievements.html',
-
-		// Translations
-		'getTranslationPhrase': 'translations.html',
-		'getFileTranslation': 'translations.html',
 
 		// Precache
 		'precacheImage': 'precache.html',

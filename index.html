@@ -2,7 +2,7 @@
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Psych Engine - Lua Script API</title>
+		<title>Shadow Engine - Lua Script API</title>
 		<link rel="stylesheet" href="css/main.css">
 		<link rel="stylesheet" href="css/header.css">
 		<link rel="stylesheet" href="css/search.css">
@@ -29,8 +29,8 @@
 		<div class="headerbox">
 			<div class="header">
 				<a href="index.html">
-					<img width="64" src="assets/icon.ico" alt="Psych Engine Logo" draggable="false">
-					<div class="headertext">Psych Engine - Lua Script API</div>
+					<img width="64" src="assets/icon.ico" alt="Shadow Engine Logo" draggable="false">
+					<div class="headertext">Shadow Engine - Lua Script API</div>
 				</a>
 			</div>
 		</div>
@@ -40,21 +40,22 @@
 			<h1>Home Page</h1>
 			<hr>
 			<p>This site is highly inspired by Flixel API's site, so huge props to them.</p>
-			<p>These pages are intended for Psych Engine 1.0+, so it might not be reliable for older versions.
+			<p>These pages are intended for Psych Engine 0.7.3 and Shadow Engine 0.2+, so it might not be reliable for other versions.
 			<br>Support for other versions has been abandoned and will not be added to these pages.
 			</p>
-			<img width="400" src="assets/logo.png" alt="Psych Engine Logo" class="logoImage" draggable="false">
+			<img width="400" src="assets/logo.png" alt="Shadow Engine Logo" class="logoImage" draggable="false">
 			
-			<hr>
+			<!--<hr>
 			<h2>VS Code Extension</h2>
 			<p><a href="https://gamebanana.com/tools/10716">It's highly recommended for you to install it</a>, as it auto-completes function names.
 			</br>This is an unofficial tool though.</p>
-			<hr>
+			<hr>-->
 			<h2>Running a script</h2>
-			<h3>There are 6 types of LUA Scripts you can run:</h3>
+			<h3>There are 7 types of LUA Scripts you can run:</h3>
 
 			<ul class="methoddiv">
 				<li class="exampleitem"><b>Stage Script:</b> It will only run if the song's stage is loaded in the current chart, it should have the same name as your stage's .JSON file and should be inside <span class="methodexample">mods/My-Mod/stages/</span>.</li>
+				<li class="exampleitem"><b>State / Substate Script:</b> It will only run while a specific State or Substate is active. State scripts should be placed inside <span class="methodexample">mods/My-Mod/stateScripts/</span> and Substate scripts inside <span class="methodexample">mods/My-Mod/substateScripts/</span>.</li>
 				<li class="exampleitem"><b>Note Type Script:</b> It will only run if the named Note Type is being used in the current chart, it should be inside <span class="methodexample">mods/My-Mod/custom_notetypes/</span>.</li>
 				<li class="exampleitem"><b>Event Script:</b> It will only run if the said Event is being used on the chart, it should be located inside <span class="methodexample">mods/My-Mod/custom_events/</span>.</li>
 				<li class="exampleitem"><b>Song Script(s):</b> They should be saved inside the song's chart folder, it will only run in this specific song, no matter the Difficulty, Stage or anything else.</li>
@@ -63,12 +64,12 @@
 			</ul>
 			<hr>
 			<h2>Functions</h2>
-			<h3>There are 22 pages available with 212 functions:</h3>
-			<ul>
+			<h3>There are ? pages available with ? functions:</h3>
+			<!--<ul>
 				<li><a href="pages/playstate.html">PlayState Functions</a></li>
 				<li><a href="pages/reflection.html">Reflection Functions</a></li>
 				<li><a href="pages/spritesheet.html">Spritesheet Functions</a></li>
-				<li><a href="pages/flxanimate.html">FlxAnimate Functions</a></li>
+				<li><a href="pages/flixel-animate.html">Flixel Animate Functions</a></li>
 				<li><a href="pages/text.html">Text Functions</a></li>
 				<li><a href="pages/sound.html">Sound Functions</a></li>
 				<li><a href="pages/shaders.html">Shaders Functions</a></li>
@@ -78,14 +79,13 @@
 				<li><a href="pages/timer.html">Timer Functions</a></li>
 				<li><a href="pages/character.html">Character Functions</a></li>
 				<li><a href="pages/file.html">File I/O Functions</a></li>
-				<li><a href="pages/translations.html">Language/Translation Functions</a></li>
-				<li><a href="pages/achievements.html">Achievements Functions</a></li>
 				<li><a href="pages/substate.html">Substate Functions</a></li>
 				<li><a href="pages/precache.html">Precache Functions</a></li>
 				<li><a href="pages/score.html">Score Functions</a></li>
 				<li><a href="pages/savedata.html">Save Data Functions</a></li>
 				<li><a href="pages/script.html">Script Functions</a></li>
 				<li><a href="pages/discord.html">Discord Functions</a></li>
+				<li><a href="pages/mobile.html">Mobile Functions</a></li>
 				<li><a href="pages/uncategorized.html">Uncategorized Functions</a></li>
 			</ul>
 			<br><hr>
@@ -93,7 +93,7 @@
 			<ul>
 				<li><a href="pages/variables.html">List of all 106 Variables</a></li>
 				<li><a href="pages/snippets.html">Code Snippets</a></li>
-			</ul>
+			</ul>-->
 		</div>
 	</body>
 </html>
