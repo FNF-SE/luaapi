@@ -41,11 +41,42 @@
 			<p><b>Functions to change camera points and apply effects.</b></p>
 			<hr>
 
+			<h2 id="makeLuaCamera">makeLuaCamera</h2>
+			<p class="methodbox">
+				makeLuaCamera(<span class="variablemarkup">tag</span>:String, <span class="isoptional">?</span><span class="variablemarkup">defaultDrawTarget</span>:Bool = false):Void
+			</p>
+			<p>Creates a new Lua-accessible camera and registers it for later use.</p>
+			<ul>
+				<li>
+					<b><span class="variablemarkup">tag</span></b> – Name used to reference the camera in other camera functions.
+				</li>
+				<li>
+					<b><span class="variablemarkup">defaultDrawTarget</span> (Optional)</b> –
+					If true, game objects render to this camera by default.
+					If false, only objects explicitly assigned to it will render.
+				</li>
+			</ul>
+			<p>
+				The camera is created with a fully transparent background and stored internally,
+				allowing it to be referenced by name in functions such as
+				<code>cameraShake</code>, <code>cameraFlash</code>, and <code>cameraFade</code>.
+			</p>
+			<h4>Examples:</h4>
+			<ul class="methoddiv">
+				<li class="exampleitem">
+					<span class="methodexample">makeLuaCamera('cinematic')</span> – Creates a new transparent camera.
+				</li>
+				<li class="exampleitem">
+					<span class="methodexample">makeLuaCamera('overlay', true)</span> – Creates a camera as a default draw target.
+				</li>
+			</ul>
+			<hr>
+
 			<h2 id="cameraShake">cameraShake</h2>
 			<p class="methodbox">cameraShake(<span class="variablemarkup">camera</span>:String, <span class="variablemarkup">intensity</span>:Float, <span class="variablemarkup">duration</span>:Float):Void</p>
 			<p>Shakes an identified camera.</p>
 			<ul>
-				<li><b><span class="variablemarkup">camera</span></b> - Can be "game", "hud" or "other".</li>
+				<li><b><span class="variablemarkup">camera</span></b> - Can be "game", "hud", "other" or your created camera.</li>
 				<li><b><span class="variablemarkup">intensity</span></b> - Shake intensity.</li>
 				<li><b><span class="variablemarkup">duration</span></b> - How much time the shake lasts for (in seconds).</li>
 			</ul>
@@ -59,7 +90,7 @@
 			<p class="methodbox">cameraFlash(<span class="variablemarkup">camera</span>:String, <span class="variablemarkup">color</span>:String, <span class="variablemarkup">duration</span>:Float, <span class="variablemarkup">forceReset</span>:Bool):Void</p>
 			<p>Flashes an identified camera.</p>
 			<ul>
-				<li><b><span class="variablemarkup">camera</span></b> - Can be "game", "hud" or "other".</li>
+				<li><b><span class="variablemarkup">camera</span></b> - Can be "game", "hud", "other" or your created camera.</li>
 				<li><b><span class="variablemarkup">color</span></b> - Color hexadecimal string or <a href="https://api.haxeflixel.com/flixel/util/FlxColor.html">color name</a>.</li>
 				<li><b><span class="variablemarkup">duration</span></b> - How much time the shake lasts for (in seconds).</li>
 				<li><b><span class="variablemarkup">forceReset</span></b> - If false, won't flash if there's still a previous flash active.</li>
@@ -75,7 +106,7 @@
 			<p class="methodbox">cameraFade(<span class="variablemarkup">camera</span>:String, <span class="variablemarkup">color</span>:String, <span class="variablemarkup">duration</span>:Float, <span class="variablemarkup">forceReset</span>:Bool, <span class="isoptional">?</span><span class="variablemarkup">fadeOut</span>:Bool = false):Void</p>
 			<p>Flashes an identified camera.</p>
 			<ul>
-				<li><b><span class="variablemarkup">camera</span></b> - Can be "game", "hud" or "other".</li>
+				<li><b><span class="variablemarkup">camera</span></b> - Can be "game", "hud", "other" or your created camera.</li>
 				<li><b><span class="variablemarkup">color</span></b> - Color hexadecimal string or <a href="https://api.haxeflixel.com/flixel/util/FlxColor.html">color name</a>.</li>
 				<li><b><span class="variablemarkup">duration</span></b> - How much time the shake lasts for (in seconds).</li>
 				<li><b><span class="variablemarkup">forceReset</span></b> - If false, won't flash if there's still a previous flash active.</li>

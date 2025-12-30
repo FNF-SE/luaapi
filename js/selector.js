@@ -30,6 +30,16 @@ function createSidebarContent(prefix) {
 		'setTimeBarColors': 'playstate.html',
 		'startDialogue': 'playstate.html',
 		'startVideo': 'playstate.html',
+		'setCameraScroll': 'playstate.html',
+		'setCameraFollowPoint': 'playstate.html',
+		'addCameraScroll': 'playstate.html',
+		'addCameraFollowPoint': 'playstate.html',
+		'getCameraScrollX': 'playstate.html',
+		'getCameraScrollY': 'playstate.html',
+		'getCameraFollowX': 'playstate.html',
+		'getCameraFollowY': 'playstate.html',
+		'cameraSetTarget': 'playstate.html',
+		'cameraShake': 'playstate.html',
 
 		// Reflection
 		'getProperty': 'reflection.html',
@@ -124,16 +134,7 @@ function createSidebarContent(prefix) {
 		'luaSoundExists': 'sound.html',
 
 		// Camera
-		'setCameraScroll': 'camera.html',
-		'setCameraFollowPoint': 'camera.html',
-		'addCameraScroll': 'camera.html',
-		'addCameraFollowPoint': 'camera.html',
-		'getCameraScrollX': 'camera.html',
-		'getCameraScrollY': 'camera.html',
-		'getCameraFollowX': 'camera.html',
-		'getCameraFollowY': 'camera.html',
-		'cameraSetTarget': 'camera.html',
-		'cameraShake': 'camera.html',
+		'makeLuaCamera': 'camera.html',
 		'cameraFlash': 'camera.html',
 		'cameraFade': 'camera.html',
 
