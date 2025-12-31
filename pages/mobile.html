@@ -54,7 +54,7 @@
 			<p class="methodbox">mobileControlsMode():String</p>
 			<p>Returns the current mobile controls mode as a string.</p>
 			<ul>
-				<li><b>Possible returns:</b> "left", "right", "custom", "hitbox", "none", or "unknown"</li>
+				<li><b>Possible returns:</b> "left", "right", "custom", "hitbox", "none", or "unknown."</li>
 			</ul>
 			<hr>
 
@@ -62,12 +62,12 @@
 			<p class="methodbox">extraButtonPressed(<span class="variablemarkup">button</span>:String = 'first'):Bool</p>
 			<p>Returns whether an extra mobile control button is currently being held.</p>
 			<ul>
-				<li><b><span class="variablemarkup">button</span></b> - Can be "first" or "second". Defaults to "first"</li>
+				<li><b><span class="variablemarkup">button</span></b> - Can be "first" or "second". Defaults to "first."</li>
 			</ul>
 			<h4>Examples:</h4>
 			<ul class="methoddiv">
-				<li class="exampleitem"><span class="methodexample">extraButtonPressed()</span> - Checks first extra button.</li>
-				<li class="exampleitem"><span class="methodexample">extraButtonPressed('second')</span> - Checks second extra button.</li>
+				<li class="exampleitem"><span class="methodexample">extraButtonPressed()</span> - Checks the first extra button.</li>
+				<li class="exampleitem"><span class="methodexample">extraButtonPressed('second')</span> - Checks the second extra button.</li>
 			</ul>
 			<hr>
 
@@ -75,7 +75,7 @@
 			<p class="methodbox">extraButtonJustPressed(<span class="variablemarkup">button</span>:String = 'first'):Bool</p>
 			<p>Returns whether an extra mobile control button was just pressed in this frame.</p>
 			<ul>
-				<li><b><span class="variablemarkup">button</span></b> - Can be "first" or "second". Defaults to "first"</li>
+				<li><b><span class="variablemarkup">button</span></b> - Can be "first" or "second". Defaults to "first."</li>
 			</ul>
 			<hr>
 
@@ -83,7 +83,7 @@
 			<p class="methodbox">extraButtonJustReleased(<span class="variablemarkup">button</span>:String = 'first'):Bool</p>
 			<p>Returns whether an extra mobile control button was just released in this frame.</p>
 			<ul>
-				<li><b><span class="variablemarkup">button</span></b> - Can be "first" or "second". Defaults to "first"</li>
+				<li><b><span class="variablemarkup">button</span></b> - Can be "first" or "second". Defaults to "first."</li>
 			</ul>
 			<hr>
 
@@ -91,7 +91,7 @@
 			<p class="methodbox">extraButtonReleased(<span class="variablemarkup">button</span>:String = 'first'):Bool</p>
 			<p>Returns whether an extra mobile control button is not being pressed (released).</p>
 			<ul>
-				<li><b><span class="variablemarkup">button</span></b> - Can be "first" or "second". Defaults to "first"</li>
+				<li><b><span class="variablemarkup">button</span></b> - Can be "first" or "second". Defaults to "first."</li>
 			</ul>
 			<hr>
 
@@ -111,7 +111,7 @@
 
 			<h2 id="addTouchPad">addTouchPad</h2>
 			<p class="methodbox">addTouchPad(<span class="variablemarkup">DPadMode</span>:String, <span class="variablemarkup">ActionMode</span>:String, <span class="isoptional">?</span><span class="variablemarkup">addToCustomSubstate</span>:Bool = false, <span class="isoptional">?</span><span class="variablemarkup">posAtCustomSubstate</span>:Int = -1):Void</p>
-			<p>Adds a customizable touch pad to the screen.</p>
+			<p>Adds a customizable touchpad to the screen.</p>
 			<ul>
 				<li><b><span class="variablemarkup">DPadMode</span></b> - D-pad mode (e.g., "left", "right", "custom")</li>
 				<li><b><span class="variablemarkup">ActionMode</span></b> - Action button mode</li>
@@ -122,12 +122,12 @@
 
 			<h2 id="removeTouchPad">removeTouchPad</h2>
 			<p class="methodbox">removeTouchPad():Void</p>
-			<p>Removes the currently active touch pad.</p>
+			<p>Removes the currently active touchpad.</p>
 			<hr>
 
 			<h2 id="addTouchPadCamera">addTouchPadCamera</h2>
 			<p class="methodbox">addTouchPadCamera(<span class="isoptional">?</span><span class="variablemarkup">defaultDrawTarget</span>:Bool = false):Void</p>
-			<p>Adds a camera specifically for the touch pad.</p>
+			<p>Adds a camera specifically for the touchpad.</p>
 			<ul>
 				<li><b><span class="variablemarkup">defaultDrawTarget</span></b> - Whether to use as default draw target (optional)</li>
 			</ul>
@@ -135,7 +135,7 @@
 
 			<h2 id="touchPadJustPressed">touchPadJustPressed</h2>
 			<p class="methodbox">touchPadJustPressed(<span class="variablemarkup">button</span>:Dynamic):Bool</p>
-			<p>Returns whether a touch pad button was just pressed in this frame.</p>
+			<p>Returns whether a touchpad button was just pressed in this frame.</p>
 			<ul>
 				<li><b><span class="variablemarkup">button</span></b> - Button ID or name</li>
 			</ul>
@@ -143,7 +143,7 @@
 
 			<h2 id="touchPadPressed">touchPadPressed</h2>
 			<p class="methodbox">touchPadPressed(<span class="variablemarkup">button</span>:Dynamic):Bool</p>
-			<p>Returns whether a touch pad button is currently being held.</p>
+			<p>Returns whether a touchpad button is currently being held.</p>
 			<ul>
 				<li><b><span class="variablemarkup">button</span></b> - Button ID or name</li>
 			</ul>
@@ -151,7 +151,7 @@
 
 			<h2 id="touchPadJustReleased">touchPadJustReleased</h2>
 			<p class="methodbox">touchPadJustReleased(<span class="variablemarkup">button</span>:Dynamic):Bool</p>
-			<p>Returns whether a touch pad button was just released in this frame.</p>
+			<p>Returns whether a touchpad button was just released in this frame.</p>
 			<ul>
 				<li><b><span class="variablemarkup">button</span></b> - Button ID or name</li>
 			</ul>
@@ -159,7 +159,7 @@
 
 			<h2 id="touchPadReleased">touchPadReleased</h2>
 			<p class="methodbox">touchPadReleased(<span class="variablemarkup">button</span>:Dynamic):Bool</p>
-			<p>Returns whether a touch pad button is not being pressed (released).</p>
+			<p>Returns whether a touchpad button is not being pressed (released).</p>
 			<ul>
 				<li><b><span class="variablemarkup">button</span></b> - Button ID or name</li>
 			</ul>
@@ -293,7 +293,7 @@
 			<p class="methodbox">getCurrentOrientation():String</p>
 			<p>Returns the current screen orientation as a string.</p>
 			<ul>
-				<li><b>Possible returns:</b> "Portrait", "PortraitUpsideDown", "LandscapeLeft", or "LandscapeRight"</li>
+				<li><b>Possible returns:</b> "Portrait", "PortraitUpsideDown", "LandscapeLeft", or "LandscapeRight."</li>
 			</ul>
 			<hr>
 
@@ -301,7 +301,7 @@
 			<p class="methodbox">setOrientation(<span class="variablemarkup">hint</span>:String):Void</p>
 			<p>Sets the screen orientation.</p>
 			<ul>
-				<li><b><span class="variablemarkup">hint</span></b> - Can be: "portrait", "upsidedown", "landscapeleft", "landscape", or "landscaperight"</li>
+				<li><b><span class="variablemarkup">hint</span></b> - Can be: "portrait", "upsidedown", "landscapeleft", "landscape", or "landscaperight."</li>
 			</ul>
 			<h4>Examples:</h4>
 			<ul class="methoddiv">
@@ -362,7 +362,7 @@
 			<p class="methodbox">setActivityTitle(<span class="variablemarkup">text</span>:String):Void</p>
 			<p>Sets the Android activity/window title.</p>
 			<ul>
-				<li><b><span class="variablemarkup">text</span></b> - New title text</li>
+				<li><b><span class="variablemarkup">text</span></b> - New title to set the Android activity/window as.</li>
 			</ul>
 		</div>
 	</body>
